@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carreras de autos</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      var firebaseConfig = {
+
+apiKey: "AIzaSyDziWpFU-joHGTi8u2UKCm8SDhtXn_yih4",
+
+authDomain: "c35-firebase-f424b.firebaseapp.com",
+
+databaseURL: "https://c35-firebase-f424b-default-rtdb.firebaseio.com",
+
+projectId: "c35-firebase-f424b",
+
+storageBucket: "c35-firebase-f424b.appspot.com",
+
+messagingSenderId: "257690254449",
+
+appId: "1:257690254449:web:56a0c5f3d65ad4d3a66fd0"
+
+};
+
+     /* var firebaseConfig = {
+        apiKey: "AIzaSyAQ5VMAHEv55FmMG7Cvne5TFVoHzjem7iw",
+        authDomain: "multiplayergame-f6cbe.firebaseapp.com",
+        databaseURL: "https://multiplayergame-f6cbe.firebaseio.com",
+        projectId: "multiplayergame-f6cbe",
+        storageBucket: "multiplayergame-f6cbe.appspot.com",
+        messagingSenderId: "488741733610",
+        appId: "1:488741733610:web:9495da95518039d3"
+      };*/
+      // Inicia Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
